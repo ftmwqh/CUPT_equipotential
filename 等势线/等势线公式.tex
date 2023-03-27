@@ -1,0 +1,68 @@
+\documentclass{report}
+\usepackage{ctex}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{indentfirst}
+\usepackage{titlesec}
+\usepackage{setspace}
+\usepackage{subfigure}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{geometry}
+\usepackage{multirow}
+\usepackage{color}
+\geometry{left=4cm,right=4cm,top=3cm}
+\title{\songti \zihao{2}\bfseries 液晶光电效应综合实验}
+\titleformat*{\section}{\songti\zihao{4}\bfseries}
+\titleformat*{\subsection}{\songti\zihao{5}\bfseries}
+\renewcommand\thesection{\arabic{section}}
+\author{王启骅 PB20020580}
+\begin{document}
+由于水槽两边为绝缘边界，可认为是理想情况下极板是铝箔平行板电容器的匀强电场，则有电势分布
+\begin{equation}
+	U(x)=U_0(1-\frac{x}{s})\nonumber
+\end{equation}
+
+
+圆柱形容器半径为R，电极半径为a。圆柱形容器周围包裹铝箔，并接电源负极，电极连接电源正极，电压为$ U_0 $
+
+
+双电层分为吸附层(Stern),扩散层(Guoy) 。扩散层正负离子分布满足玻尔兹曼分布
+\begin{equation}
+	n_+=n_{0+}exp[-\frac{ze\phi}{kT}] \nonumber
+\end{equation}
+\begin{equation}
+	n_-=n_{0-}exp[\frac{ze\phi}{kT}] \nonumber
+\end{equation}
+
+
+由麦克斯韦方程
+\begin{equation}
+	\bigtriangledown^2\phi=-\frac{\rho}{\epsilon} \nonumber
+\end{equation}
+
+
+联立并得到
+\begin{equation}
+	\dfrac{d^2\phi}{dr^2}=\frac{2n_0ze}{\epsilon}sinh(\frac{ze\phi}{kT})
+	\nonumber
+\end{equation}
+
+
+由$ \phi $为低电势近似得到
+\begin{equation}
+	\dfrac{d^2\phi}{dr^2}=\frac{2n_0z^2e^2}{\epsilon kT}\phi
+	\nonumber
+\end{equation}
+
+
+解得双电层产生的电势偏移量
+\begin{equation}
+	\phi=\Phi_sexp[-\sqrt{\frac{2n_0z^2e^2}{\epsilon kT}}r]
+	\nonumber
+\end{equation}
+
+
+
+\end{document}
